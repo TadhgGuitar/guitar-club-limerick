@@ -15,3 +15,27 @@ navMenu?.addEventListener('click', (event) => {
     navMenu.classList.remove('is-open');
   }
 });
+
+const faqSection = document.querySelector('.faq');
+
+faqSection?.addEventListener('click', (event) => {
+  const questionButton = event.target instanceof Element
+    ? event.target.closest('.faq-question')
+    : null;
+
+  if (!(questionButton instanceof HTMLButtonElement)) return;
+
+  const shouldExpand = questionButton.getAttribute('aria-expanded') !== 'true';
+
+  faqSection.querySelectorAll('.faq-question').forEach((faqButton) => {
+    faqButton.setAttribute('aria-expanded', 'false');
+    const answer = document.getElementById(faqButton.getAttribute('aria-controls'));
+    if (answer) answer.hidden = true;
+  });
+
+  if (shouldExpand) {
+    questionButton.setAttribute('aria-expanded', 'true');
+    const answer = document.getElementById(questionButton.getAttribute('aria-controls'));
+    if (answer) answer.hidden = false;
+  }
+});
