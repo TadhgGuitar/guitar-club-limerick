@@ -24,6 +24,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#home,
+#about,
+#pricing,
+#faq,
+#contact {
+  scroll-margin-top: 90px;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -304,6 +312,48 @@ h2 {
   overflow: hidden;
   background: var(--ticker-bg);
   color: var(--ink);
+}
+
+.intro-section {
+  padding-block: 72px;
+  background: #edfbf3;
+}
+
+.intro-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.intro-section h2 {
+  font-size: 58px;
+  line-height: 1.05;
+}
+
+.intro-section h2 em {
+  color: var(--coral);
+  font-style: normal;
+}
+
+.intro-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.intro-text-container .button {
+  align-self: flex-start;
+  width: fit-content;
+  padding-inline: 18px;
 }
 
 .ticker-track {
@@ -759,7 +809,7 @@ h2 {
 }
 
 .pricing-cta .button {
-  margin-top: 16px;
+  margin-top: 28px;
 }
 
 .faq {
@@ -832,7 +882,7 @@ h2 {
 
 .faq-answer {
   padding: 0 38px 18px 0;
-  color: #828181;
+  color: var(--ink);
   font-size: 15px;
   line-height: 1.7;
 }
@@ -842,14 +892,16 @@ h2 {
 }
 
 .closing-cta {
-  padding-block: 73px;
-  background: #f2694a;
-  color: white;
-  overflow: hidden;
+  padding-block: 72px;
+  background: #eaf7f8;
+  color: rgb(12, 46, 74);
 }
 
 .closing-inner {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 72px;
 }
 
 .closing-cta .eyebrow {
@@ -865,7 +917,67 @@ h2 {
 }
 
 .closing-cta h2 em {
-  color: var(--yellow);
+  color: #ffed8a;
+}
+
+.contact-copy {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-details {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-details li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-details .contact-whatsapp-item {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.contact-details img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.contact-detail {
+  display: grid;
+  gap: 3px;
+}
+
+.contact-whatsapp-button {
+  justify-self: start;
+  width: max-content;
+  max-width: 100%;
+  gap: 10px;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.button-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.button-whatsapp:hover {
+  background: #20bd5a;
+}
+
+.contact-whatsapp-button img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .button-dark {
@@ -875,16 +987,11 @@ h2 {
 }
 
 .cta-jamming {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: min(36%, 360px);
+  display: block;
+  width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  object-position: center 45%;
   border-radius: 8px;
-  box-shadow: 0 16px 32px rgba(17, 36, 56, .24);
-  transform: translateY(-50%);
 }
 
 .site-footer {
@@ -923,7 +1030,7 @@ h2 {
   align-items: center;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 @media (max-width: 900px) {
@@ -1085,6 +1192,19 @@ h2 {
     height: 58px;
   }
 
+  .intro-section {
+    padding-block: 52px;
+  }
+
+  .intro-layout {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .intro-section h2 {
+    font-size: 43px;
+  }
+
   .ticker-icon {
     width: 34px;
     height: 40px;
@@ -1141,20 +1261,16 @@ h2 {
   }
 
   .closing-cta {
-    padding-block: 61px;
+    padding-block: 52px;
   }
 
   .closing-cta h2 {
     font-size: 44px;
   }
 
-  .cta-jamming {
-    position: static;
-    display: block;
-    width: min(100%, 240px);
-    height: auto;
-    margin: 28px 0 0 auto;
-    transform: none;
+  .closing-inner {
+    grid-template-columns: 1fr;
+    gap: 26px;
   }
 
   .footer-main {

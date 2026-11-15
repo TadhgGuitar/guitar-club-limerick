@@ -16,31 +16,31 @@
   <body>
     <header class="site-header">
       <nav class="navbar wrap" aria-label="Main navigation">
-        <a class="brand" href="index.html" aria-label="Guitar Club Limerick home">
-          <img class="brand-logo" src="assets/images/Limerickbadge.png" alt="">
+        <a class="brand" href="#home" aria-label="Guitar Club Limerick home">
+          <img class="brand-logo" src="assets/images/Logo.png" alt="">
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
           <span></span><span></span><span></span>
         </button>
         <div class="nav-menu" id="primary-menu">
-          <a class="nav-link is-current" href="index.html" aria-current="page">Home</a>
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link" href="prices.html">Prices</a>
-          <a class="nav-link" href="faq.html">FAQ</a>
-          <a class="nav-link" href="contact.html">Contact</a>
-          <a class="nav-cta" href="contact.html">Ready To Rock ?</a>
+          <a class="nav-link is-current" href="#home" aria-current="page">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#pricing">Prices</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-cta" href="#contact">Ready To Rock ?</a>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="hero-photo" role="img" aria-label="A musician playing acoustic guitar"></div>
         <div class="hero-shade"></div>
         <div class="hero-content wrap">
           <h1 id="hero-title">Limerick<br><em>Guitar Club</em></h1>
           <p class="hero-copy">READY TO ROCK? Grab a guitar, unleash your inner musician, and let’s make some noise!</p>
-          <a class="button button-coral" href="contact.html">Let's Get Started!</a>
+          <a class="button button-coral" href="#contact">Let's Get Started!</a>
           <div class="hero-note"><span>EARLY BIRD BOOKINGS NOW OPEN<br></span></div>
         </div>
       </section>
@@ -63,6 +63,19 @@
           </div>
         </div>
       </div>
+      <section class="intro-section" id="about" aria-labelledby="intro-title">
+        <div class="intro-layout wrap">
+          <div class="intro-text-container">
+            <h2 id="intro-title">Welcome!</h2>
+            <p class="intro-copy">Hello, and welcome! I'm Tadhg, and I am the owner of Limerick Guitar Club. As someone who has been playing the guitar for over 20 years, I know that the key to learning is all about being engaged and having fun through the process!
+
+              <br><br>With this in mind, my lessons are interactive, easy to follow and help your child get a sense of achievement at the end, while learning a new skill.
+            </p>
+            <a class="button button-coral" href="#contact">Get in Touch!</a>
+          </div>
+          <img class="intro-image" src="assets/images/FriendsCircle.png" alt="Young musicians playing guitar together">
+        </div>
+      </section>
       <section class="why section-pad" aria-labelledby="why-title">
         <div class="section-heading wrap">
           <h2 id="why-title">Why Guitar<span class="coral-dot">?</span></h2>
@@ -121,10 +134,10 @@
         </div>
       </section>
 
-      <section class="pricing section-pad" aria-labelledby="pricing-title">
+      <section class="pricing section-pad" id="pricing" aria-labelledby="pricing-title">
         <div class="section-heading wrap">
           <h2 id="pricing-title">Term Pricing</h2>
-          <p class="section-intro">12 Week Lesson Program</p>
+          <p class="section-intro">10 Week Lesson Program</p>
         </div>
         <div class="pricing-grid wrap">
           <article class="price-option">
@@ -132,7 +145,7 @@
             <p class="lesson-price"><span class="price-amount">€30</span><span class="price-unit">per lesson</span></p>
             <ul class="price-inclusions">
               <li><span class="price-check" aria-hidden="true">✓</span>1 Hour Lessons</li>
-              <li><span class="price-check" aria-hidden="true">✓</span>12 Week Term</li>
+              <li><span class="price-check" aria-hidden="true">✓</span>10 Week Term</li>
             </ul>
           </article>
           <article class="price-option price-option-featured">
@@ -141,7 +154,7 @@
             <p class="price-saving">Save €60 per child</p>
             <ul class="price-inclusions">
               <li><span class="price-check" aria-hidden="true">✓</span>1 Hour Lessons</li>
-              <li><span class="price-check" aria-hidden="true">✓</span>12 Week Term</li>
+              <li><span class="price-check" aria-hidden="true">✓</span>10 Week Term</li>
             </ul>
             <p class="price-offer-label">LIMITED SPACES</p>
           </article>
@@ -151,17 +164,17 @@
             <p class="price-saving">Save €120 per child</p>
             <ul class="price-inclusions">
               <li><span class="price-check" aria-hidden="true">✓</span>1 Hour Lessons</li>
-              <li><span class="price-check" aria-hidden="true">✓</span>12 Week Term</li>
+              <li><span class="price-check" aria-hidden="true">✓</span>10 Week Term</li>
             </ul>
           </article>
         </div>
         <div class="pricing-cta">
           <h3>Secure Your Spot For The Term!</h3>
-          <a class="button button-coral" href="contact.html">Book Now</a>
+          <a class="button button-coral" href="#contact">Book Now</a>
         </div>
       </section>
 
-      <section class="faq section-pad" aria-labelledby="faq-title">
+      <section class="faq section-pad" id="faq" aria-labelledby="faq-title">
         <div class="section-heading wrap">
           <h2 id="faq-title">FAQs</h2>
         </div>
@@ -169,7 +182,7 @@
           <div class="faq-column">
             <article class="faq-item">
               <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">What do I need to bring to a lesson?<span class="faq-toggle-sign" aria-hidden="true">+</span></button></h3>
-              <div class="faq-answer" id="faq-answer-1" hidden><p>All you need is your own guitar, a plectrum and the enthusiasm to learn! Worksheets, envelope folder and other materials used throughout the lessons will be provided.</p></div>
+              <div class="faq-answer" id="faq-answer-1" hidden><p>All you need is your own guitar, an electronic tuner and the enthusiasm to learn! Worksheets, plectrum(s), envelope folder and other materials used throughout the lessons will be provided.</p></div>
             </article>
             <article class="faq-item">
               <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">How long is each lesson?<span class="faq-toggle-sign" aria-hidden="true">+</span></button></h3>
@@ -177,11 +190,11 @@
             </article>
             <article class="faq-item">
               <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">How long is a Term?<span class="faq-toggle-sign" aria-hidden="true">+</span></button></h3>
-              <div class="faq-answer" id="faq-answer-3" hidden><p>A term is 12 weeks long. This is a total of twelve 1-hour weekly group lessons.</p></div>
+              <div class="faq-answer" id="faq-answer-3" hidden><p>A term is 10 weeks long. This is a total of twelve 1-hour weekly group lessons.</p></div>
             </article>
             <article class="faq-item">
               <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">What ages are these lessons suitable for?<span class="faq-toggle-sign" aria-hidden="true">+</span></button></h3>
-              <div class="faq-answer" id="faq-answer-4" hidden><p>Although the lessons are designed for complete beginners, the lesson plans are designed for students attending 3rd to 6th Class. So, the age limit for these classes is no younger than 8 years old and no older than 12 or 13 depending on the age at 6th Class.</p></div>
+              <div class="faq-answer" id="faq-answer-4" hidden><p>The lesson plans are designed for students attending 3rd to 6th Class. So, the age limit for these classes is no younger than 8 years old and no older than 12 or 13 depending on the age at 6th Class.</p></div>
             </article>
           </div>
           <div class="faq-column">
@@ -192,12 +205,12 @@
             <article class="faq-item">
               <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6">Can siblings book together?<span class="faq-toggle-sign" aria-hidden="true">+</span></button></h3>
               <div class="faq-answer" id="faq-answer-6" hidden><p>
-              Absolutely! Siblings can book together, and will receive a discounted rate for two or more children from the same family. Please get in touch for more information. 
+              Absolutely! Siblings can book together, and will receive a discounted rate for two or more children from the same household. Please get in touch for more information. 
               </p></div>
             </article>
             <article class="faq-item">
               <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7">What if my child misses a lesson?<span class="faq-toggle-sign" aria-hidden="true">+</span></button></h3>
-              <div class="faq-answer" id="faq-answer-7" hidden><p>Refunds can't be offerred, but if an absence is notified in advance, arrangements can be made on availability to ensure that your child doesn't fall behind for the lesson that they missed. Please notify as soon as possible if your child is unable to attend a weekly lesson.</p></div>
+              <div class="faq-answer" id="faq-answer-7" hidden><p>Refunds can't be offerred. Please get in touch as soon as possible if your child will be absent from a lesson. Depending on time and availability, best efforts can be made to help the child catch up from the lesson they missed. </p></div>
             </article>
             <article class="faq-item">
               <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-8">How do I book a place?<span class="faq-toggle-sign" aria-hidden="true">+</span></button></h3>
@@ -207,24 +220,37 @@
         </div>
       </section>
 
-      <section class="closing-cta" aria-label="Contact Guitar Club Limerick">
+      <section class="closing-cta" id="contact" aria-labelledby="contact-title">
         <div class="closing-inner wrap">
-          <h2>Ready to make<br><em>some noise?</em></h2>
-          <a class="button button-dark" href="contact.html">Secure Your Spot</a>
-          <img class="cta-jamming" src="assets/images/jamming.png" alt="Children playing acoustic guitars together">
+          <div class="contact-copy">
+            <h2 id="contact-title">Get In Touch</h2>
+            <ul class="contact-details" aria-label="Contact details">
+              <li>
+                <img src="assets/images/smartphone-call.png" alt="">
+                <span class="contact-detail"><span>089 497 5331</span></span>
+              </li>
+              <li>
+                <img src="assets/images/email.png" alt="">
+                <span class="contact-detail"><span>hello@lmkguitarclub.com</span></span>
+              </li>
+              <li class="contact-whatsapp-item">
+                <span class="contact-detail"><a class="button button-whatsapp contact-whatsapp-button" href="https://wa.me/0894975331" target="_blank" rel="noopener noreferrer"><img src="assets/images/whatsapp.png" alt="">Contact on WhatsApp</a></span>
+              </li>
+            </ul>
+          </div>
+          <img class="cta-jamming" src="assets/images/CozyClassroom.png" alt="A bright guitar lesson room with chairs arranged in a circle">
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-main wrap">
-        <a class="brand footer-brand" href="index.html" aria-label="Guitar Club Limerick home">
-          <img class="brand-logo" src="assets/images/Limerickbadge.png" alt="">
+        <a class="brand footer-brand" href="#home" aria-label="Guitar Club Limerick home">
+          <img class="brand-logo" src="assets/images/Logo.png" alt="">
         </a>
-        <p>Good tunes. Great company.</p>
-        <div class="footer-links"><a href="about.html">About</a><a href="prices.html">Prices</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div>
+        <div class="footer-links"><a href="#about">About</a><a href="#pricing">Prices</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
       </div>
-      <div class="footer-bottom wrap"><span>© 2026 Guitar Club Limerick</span><span>Made for music, made in Limerick.</span></div>
+      <div class="footer-bottom wrap"><span>© 2026 Guitar Club Limerick</span></div>
     </footer>
   </body>
 </html>
